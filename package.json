@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "mintlify dev"
+  },
   "dependencies": {
     "mintlify": "^3.0.7"
   }
