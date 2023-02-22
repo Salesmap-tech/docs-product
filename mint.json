@@ -21,40 +21,33 @@
     "name": "Get Started",
     "url": "https://github.com/mintlify/starter"
   },
-  "anchors": [
+  "topAnchor": {
+      "name": "세일즈맵 가이드",
+      "icon": "book"
+  },
+  "anchors": [    
     {
-      "name": "API Reference",
-      "icon": "rectangle-terminal",
-      "url": "api-reference"
-    },
-    {
-      "name": "Changelog",
-      "icon": "list",
-      "url": "https://mintlify.com"
-    },
-    {
-      "name": "Community",
-      "icon": "discord",
+      "name": "슬랙 채널",
+      "icon": "slack",
       "url": "https://mintlify.com/community"
-    }
+    }    
   ],
   "navigation": [
     {
-      "group": "Home",
-      "pages": ["introduction", "features"]
+      "group": "환영합니다",
+      "pages": ["guide"]
+    },    
+    {
+      "group": "🚀 기능 살펴보기",
+      "pages": [{"group": "리드 수집하기", "pages": ["feature/lead/linkedIn", "feature/lead/webform", "feature/lead/excel", "feature/lead/create"]}, "feature/automation", "feature/lead-management", "feature/deal-pipeline-management"]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
+      "group": "⚙️ 세팅하기",
+      "pages": ["setting/create-workspace","setting/sync-email", "setting/customize-datafield"]
     },
     {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "📖 B2B 마케팅/세일즈 용어 설명",
+      "pages": ["dictionary/lead"]
     }
   ],
   "footerSocials": {
