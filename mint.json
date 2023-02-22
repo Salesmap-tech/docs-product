@@ -38,17 +38,17 @@
       "pages": ["guide"]
     },    
     {
+      "group": "📖 B2B 마케팅/세일즈 용어 설명",
+      "pages": ["dictionary/lead", "dictionary/deal&pipeline"]
+    },
+    {
       "group": "🚀 기능 살펴보기",
       "pages": [{"group": "리드 수집하기", "pages": ["feature/lead/linkedIn", "feature/lead/webform", "feature/lead/excel", "feature/lead/create"]}, "feature/automation", "feature/lead-management", "feature/deal-pipeline-management"]
     },
     {
       "group": "⚙️ 세팅하기",
       "pages": ["setting/create-workspace","setting/sync-email", "setting/customize-datafield"]
-    },
-    {
-      "group": "📖 B2B 마케팅/세일즈 용어 설명",
-      "pages": ["dictionary/lead"]
-    }
+    }    
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
