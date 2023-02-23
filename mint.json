@@ -13,13 +13,13 @@
   },
   "topbarLinks": [
     {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
+      "name": "SalesMap",
+      "url": "https://salesmap.kr"
     }
   ],
   "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://github.com/mintlify/starter"
+    "name": "도입 문의",
+    "url": "https://salesmap.kr/web-form/8c796b63-7002-4271-9229-348e864b2b23"
   },
   "topAnchor": {
       "name": "세일즈맵 가이드",
@@ -27,9 +27,9 @@
   },
   "anchors": [    
     {
-      "name": "슬랙 채널",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "카카오톡 커뮤니티",
+      "icon": "comment",
+      "url": "https://salesmap.kr/web-form/985ccb64-e885-4dec-affc-c20d19f6910c"
     }    
   ],
   "navigation": [
@@ -50,9 +50,7 @@
       "pages": ["setting/create-workspace","setting/sync-email", "setting/customize-datafield"]
     }    
   ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+  "footerSocials": {    
+    "linkedin": "https://www.linkedin.com/in/heeyeong-jeong-9b13311ba/"
   }
 }
