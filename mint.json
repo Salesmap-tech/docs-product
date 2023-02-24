@@ -35,7 +35,7 @@
   "navigation": [
     {
       "group": "환영합니다",
-      "pages": ["guide"]
+      "pages": ["introduction","inquiry"]
     },    
     {
       "group": "📖 B2B 마케팅/세일즈 용어 설명",
