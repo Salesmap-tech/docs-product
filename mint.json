@@ -47,8 +47,12 @@
     },
     {
       "group": "⚙️ 세팅하기",
-      "pages": ["setting/create-workspace","setting/sync-email", "setting/customize-datafield"]
-    }    
+      "pages": ["setting/create-workspace", "setting/sync-email", "setting/customize-datafield"]
+    },
+    {
+      "group": "💻 세일즈맵 API",
+      "pages": ["developer/overview", "developer/authentication", "developer/organization", "developer/people", "developer/lead"]
+    }  
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
