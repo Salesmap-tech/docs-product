@@ -1,0 +1,121 @@
+---
+title: "리드 생성"
+api: "POST https://salesmap.kr/api/v1/lead"
+description: "리드을 생성합니다."
+---
+
+### Header
+
+<ParamField header="Authorization" type="string" required="true">
+  Bearer 토큰을 포함한 인증 헤더입니다.
+</ParamField>
+
+### Body
+
+<ParamField body="name" type="string" required="true">
+  리드의 이름을 설정합니다.
+</ParamField>
+
+<ParamField body="price" type="string">
+  리드의 금액을 설정합니다.
+</ParamField>
+
+<ParamField body="source" type="string">
+  리드의 소스를 설정합니다. 딜/리드 데이터필드에서 소스의 선택리스트를 확인해주세요. 소스는 선택리스트 중 하나의 값으로만 설정 가능합니다. source 값을 전달하지 않는 경우 "직접 생성"으로 설정됩니다.
+</ParamField>
+
+<ParamField body="peopleId" type="string">
+  리드와 연결된 고객의 id를 설정합니다.
+</ParamField>
+
+<ParamField body="organizationId" type="string">
+  리드와 연결된 회사의 id를 설정합니다.
+</ParamField>
+
+### Response
+
+<ResponseField name="success" type="boolean">
+  요청을 성공적으로 완료한 경우 true, 실패한 경우 false 입니다.
+</ResponseField>
+
+<ResponseField name="data" type="object">
+
+  생성한 리드 정보입니다.
+
+<Expandable title="리드 정보 데이터">
+
+<ResponseField name="id" type="string">
+  리드의 고유 id 입니다. 리드를 생성할 때 사용합니다.
+</ResponseField>
+
+<ResponseField name="name" type="string">
+  생성한 리드의 이름입니다.
+</ResponseField>
+
+<ResponseField name="price" type="string">
+  생성한 리드의 금액입니다.
+</ResponseField>
+
+<ResponseField name="source" type="string">
+  생성한 리드의 소스입니다.
+</ResponseField>
+
+<ResponseField name="people" type="string">
+  생성한 리드의 고객 정보입니다.
+</ResponseField>
+
+<ResponseField name="organization" type="string">
+  생성한 리드의 회사 정보입니다.
+</ResponseField>
+
+<ResponseField name="createdAt" type="date">
+  리드가 생성된 날짜입니다.
+</ResponseField>
+
+</Expandable>
+
+</ResponseField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location 'http://localhost:3000/api/v1/lead' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <token>' \
+--data '{
+  "name":"Example_Lead",
+  "price":50000,
+  "source":"직접 생성",
+  "organizationId":"644215a350e381db28bc467f",
+  "peopleId":"644215c250e381db28bc4704"
+}'
+'
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+  "success": true,
+  "data": {
+    "id": "644218b950e381db28bc486f",
+    "name": "Example_Lead",
+    "price": 50000,
+    "people": {
+      "id": "644215c250e381db28bc4704",
+      "name": "Exmaple_People",
+      "email": "exmaple@exmaple.com",
+      "phoneNumber": "01011112222"
+    },
+    "organization": {
+      "id": "644215a350e381db28bc467f",
+      "name": "Example_Organization"
+    },
+    "createdAt": "2023-04-21T05:01:45.939Z"
+  }
+}
+```
+
+</ResponseExample>
