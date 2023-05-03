@@ -16,7 +16,7 @@ description: "고객을 생성합니다."
   고객의 이름을 설정합니다.
 </ParamField>
 
-<ParamField body="email" type="string">
+<ParamField body="email" type="string" required="true">
   고객의 이메일을 설정합니다. 같은 이메일이 존재하는 경우 생성할 수 없습니다.
 </ParamField>
 
@@ -24,8 +24,8 @@ description: "고객을 생성합니다."
   고객의 전화번호를 설정합니다.
 </ParamField>
 
-<ParamField body="organizationId" type="string">
-  고객과 연결된 회사의 id를 설정합니다.
+<ParamField body="organizationName" type="string">
+  고객과 연결된 회사의 이름을 설정합니다. 같은 이름의 회사가 존재하는 경우 기존의 회사와 연결하고, 같은 이름의 회사가 존재하지 않는 경우 새로운 회사를 생성하고 고객와 연결합니다.
 </ParamField>
 
 ### Response
@@ -78,7 +78,7 @@ curl --location 'https://salesmap.kr/api/v1/people' \
   "name":"Exmaple_People",
   "email":"exmaple@exmaple.com",
   "phoneNumber":"01011112222",
-  "organizationId":"644215a350e381db28bc467f"
+  "organizationName":"Example_Organization"
 }
 '
 ```
@@ -91,15 +91,15 @@ curl --location 'https://salesmap.kr/api/v1/people' \
 {
   "success": true,
   "data": {
-    "id": "644215c250e381db28bc4704",
+    "id": "6451c769afa4b4ecff071ea9",
     "name": "Exmaple_People",
     "email": "exmaple@exmaple.com",
     "phoneNumber": "01011112222",
     "organization": {
-      "id": "644215a350e381db28bc467f",
-      "name": "Example_Organization"
+        "id": "6451c75bafa4b4ecff071bb9",
+        "name": "Example_Organization"
     },
-    "createdAt": "2023-04-21T04:49:06.899Z"
+    "createdAt": "2023-05-03T02:31:05.000Z"
   }
 }
 ```
