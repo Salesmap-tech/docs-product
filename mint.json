@@ -44,11 +44,13 @@
     {
       "group": "🚀 기능 살펴보기",
       "pages": [
-      {"group": "리드 수집하기", "pages": ["feature/lead/linkedIn", "feature/lead/webform", "feature/lead/excel", "feature/lead/create"]}, 
-      {"group": "자동화", "pages": ["feature/automation/sequence", "feature/automation/workflow"]},
+      {"group": "리드 수집하기", "pages": ["feature/lead/linkedIn", "feature/lead/webform", "feature/lead/excel", "feature/lead/create"]},
+      {"group": "리드 관리", "pages": ["feature/lead/basic", "feature/lead/group", "feature/lead/stage"]},
+      "feature/deal-pipeline-management",
+      {"group": "자동화", "pages": ["feature/automation/sequence", "feature/automation/workflow", "feature/automation/zapier"]},
       {"group": "이메일", "pages": ["feature/email/template", "feature/email/group", "feature/email/tracking", "feature/email/variable", "feature/email/signature"]},
-      {"group": "리드 관리", "pages": ["feature/lead/basic", "feature/lead/group"]},
-      "feature/deal-pipeline-management"]
+      "feature/alarm"
+      ]
     },
     {
       "group": "⚙️ 세팅하기",
