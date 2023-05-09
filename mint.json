@@ -23,9 +23,14 @@
   },
   "topAnchor": {
       "name": "세일즈맵 가이드",
-      "icon": "book"
+      "icon": "book"      
   },
   "anchors": [    
+    {
+      "name": "블로그",
+      "icon": "blog",
+      "url": "https://blog.salesmap.kr/"
+    },    
     {
       "name": "카카오톡 커뮤니티",
       "icon": "comment",
@@ -59,7 +64,7 @@
     {
       "group": "💻 세일즈맵 API",
       "pages": ["developer/overview", "developer/authentication", "developer/organization", "developer/people", "developer/lead"]
-    }  
+    }    
   ],
   "footerSocials": {    
     "linkedin": "https://www.linkedin.com/in/heeyeong-jeong-9b13311ba/"
