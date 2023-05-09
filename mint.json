@@ -53,6 +53,7 @@
       {"group": "리드 관리", "pages": ["feature/lead/basic", "feature/lead/group", "feature/lead/stage"]},
       "feature/deal-pipeline-management",
       {"group": "자동화", "pages": ["feature/automation/sequence", "feature/automation/workflow", "feature/automation/zapier"]},
+      {"group": "대시보드", "pages": ["feature/dashboard/marketing", "feature/dashboard/sales"]},
       {"group": "이메일", "pages": ["feature/email/template", "feature/email/group", "feature/email/tracking", "feature/email/variable", "feature/email/signature"]},
       "feature/alarm"
       ]
