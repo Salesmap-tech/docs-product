@@ -69,11 +69,6 @@
   ],
   "footerSocials": {    
     "linkedin": "https://www.linkedin.com/in/heeyeong-jeong-9b13311ba/"
-  },
-  "api": {
-    "playground": {
-      "mode": "hide"
-    }
   }
 }
  
