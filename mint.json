@@ -71,7 +71,9 @@
     "linkedin": "https://www.linkedin.com/in/heeyeong-jeong-9b13311ba/"
   },
   "api": {
-    "hidePlayground": true
+    "playground": {
+      "mode": "hide"
+    }
   }
 }
  

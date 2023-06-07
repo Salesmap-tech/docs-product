@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "dev": "mintlify dev --port 3100"
-  },
-  "dependencies": {
-    "mintlify": "^3.0.7"
-  }
-}
