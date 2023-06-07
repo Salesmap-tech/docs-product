@@ -1,0 +1,32 @@
+---
+title: "Zapier 연동"
+---
+
+**"Zapier와 연동하여 수많은 작업을 자동화할 수 있어요!🤖"** <br/>
+![automation](/images/feature/automation/zapier/feature:0.webp)
+[Zapier](https://zapier.com/)는 어플리케이션 간의 자동화된 워크플로우를 만들어주는 도구입니다.<br/>
+Zapier를 활용하여, 수많은 어플리케이션과 세일즈맵 간의 작업을 간편하게 자동화할 수 있습니다.<br/>
+<br/>
+
+본 문서에서는 고스트 블로그를 구독한 잠재고객을 세일즈맵의 리드로 자동 등록하는 예시를 설명드리겠습니다.
+- 아래 예시를 따라하거나, [미리 만들어진 Zap](https://zapier.com/shared/c993f111cf7c03b8de6c40dacf2fc3b5f94a548c)을 활용해주세요.
+
+## 1. Ghost 블로그 구독시에 세일즈맵에 리드 생성
+- Zapier 메인페이지에서 Connect this app 에는 Ghost를, with this one 에는 Salesmap을 입력합니다.
+- Ghost의 Member Created 시에, Salesmap의 Creat Lead를 입력니다.
+![automation](/images/feature/automation/zapier/feature:1.webp)
+<br/>
+- Ghost와 Salesmap의 Account 연결 과정을 진행합니다.
+![automation](/images/feature/automation/zapier/feature:2.webp)
+- 세일즈맵 Account 연결시에 필요한 API KEY는 세일즈맵 개인설정 / 내정보 관리 / 개인 API 토큰 항목에서 발급받을 수 있습니다.
+![automation](/images/feature/automation/zapier/feature:3.webp)
+
+## 2. 고스트와 세일즈맵의 변수 연결
+- 고스트 구독자의 정보와, 세일즈맵 리드의 정보를 연결시키는 과정입니다.
+- 세일즈 맵 Action의 Lead Name은 세일즈맵에 생성될 리드의 이름을, Lead Source는 리드의 소스를 의미합니다.
+- People Name은 세일즈맵에 생성될 고객 이름을, People Email은 고객 이메일을 의미합니다.
+- Lead Name에는 Ghost 구독자의 이름, Lead Source에는 '블로그 구독'을 활용 할 수 있습니다.
+- People Name에는 Ghost 구독자의 이름, People Email에는 Ghost 구독자의 이메일을 활용할 수 있습니다.
+![automation](/images/feature/automation/zapier/feature:4.webp)
+<br/>
+- 모든 과정을 마쳤다면 Publish를 클릭하여 Zapier 워크플로우를 생성해주세요.

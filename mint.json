@@ -23,9 +23,14 @@
   },
   "topAnchor": {
       "name": "세일즈맵 가이드",
-      "icon": "book"
+      "icon": "book"      
   },
   "anchors": [    
+    {
+      "name": "블로그",
+      "icon": "blog",
+      "url": "https://blog.salesmap.kr/"
+    },    
     {
       "name": "카카오톡 커뮤니티",
       "icon": "comment",
@@ -43,7 +48,15 @@
     },
     {
       "group": "🚀 기능 살펴보기",
-      "pages": [{"group": "리드 수집하기", "pages": ["feature/lead/linkedIn", "feature/lead/webform", "feature/lead/excel", "feature/lead/create"]}, "feature/automation", "feature/lead-management", "feature/deal-pipeline-management"]
+      "pages": [
+      {"group": "리드 수집하기", "pages": ["feature/lead/linkedIn", "feature/lead/webform", "feature/lead/excel", "feature/lead/create"]},
+      {"group": "리드 관리", "pages": ["feature/lead/basic", "feature/lead/group", "feature/lead/stage"]},
+      "feature/deal-pipeline-management",
+      {"group": "자동화", "pages": ["feature/automation/sequence", "feature/automation/workflow", "feature/automation/zapier"]},
+      {"group": "대시보드", "pages": ["feature/dashboard/marketing", "feature/dashboard/sales"]},
+      {"group": "이메일", "pages": ["feature/email/template", "feature/email/group", "feature/email/tracking", "feature/email/variable", "feature/email/signature"]},
+      "feature/alarm"
+      ]
     },
     {
       "group": "⚙️ 세팅하기",
@@ -52,7 +65,7 @@
     {
       "group": "💻 세일즈맵 API",
       "pages": ["developer/overview", "developer/authentication", "developer/organization", "developer/people", "developer/lead"]
-    }  
+    }    
   ],
   "footerSocials": {    
     "linkedin": "https://www.linkedin.com/in/heeyeong-jeong-9b13311ba/"
