@@ -59,6 +59,10 @@
         },
         "feature/deal-pipeline-management",
         {
+          "group": "견적서 관리",
+          "pages": ["feature/quote/product", "feature/quote/deal"]
+        },
+        {
           "group": "자동화",
           "pages": ["feature/automation/sequence", "feature/automation/workflow", "feature/automation/zapier"]
         },
