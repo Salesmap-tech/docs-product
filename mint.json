@@ -49,7 +49,7 @@
     {
       "group": "🚀 기능 살펴보기",
       "pages": [
-      {"group": "리드 수집하기", "pages": ["feature/lead/linkedIn", "feature/lead/webform", "feature/lead/excel", "feature/lead/create"]},
+      {"group": "리드 수집하기", "pages": ["feature/lead/linkedIn", "feature/lead/webform", "feature/lead/excel", "feature/lead/create", "feature/lead/zapier"]},
       {"group": "리드 관리", "pages": ["feature/lead/basic", "feature/lead/group", "feature/lead/stage"]},
       "feature/deal-pipeline-management",
       {"group": "자동화", "pages": ["feature/automation/sequence", "feature/automation/workflow", "feature/automation/zapier"]},

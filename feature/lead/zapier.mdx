@@ -1,0 +1,40 @@
+---
+title: "Zapier 연동"
+---
+
+**"Zapier를 연동하고, [리드](/dictionary/lead) 수집을 자동화해보세요!"**
+![automation](/images/feature/lead/zapier/feature:zapier_1.webp)
+[Zapier](https://zapier.com/)는 어플리케이션 간의 자동화된 워크플로우를 만들어주는 도구입니다.<br/>
+외부 어플리케이션으로 획득한 리드를 세일즈맵에 연동할 수 있습니다.<br/>
+본 문서에서는 Tally로 획득한 잠재고객을 세일즈맵의 리드로 자동 등록하는 예시를 설명드리겠습니다.<br/>
+
+## 1. Trigger 생성 하기 💻
+![automation](/images/feature/lead/zapier/feature:zapier_2.webp)
+- Zapier의 Trigger로 Tally를 선택해주세요.
+- App & event에 New Submission을 선택하면, Tally Form에 문의가 제출되었을 때 Trigger가 작동됩니다.
+
+## 2. Action 생성 하기 🔗
+![automation](/images/feature/lead/zapier/feature:zapier_3.webp)
+- Action을 검색하여 Salesmap lastest 버전을 선택해주세요.
+![automation](/images/feature/lead/zapier/feature:zapier_4.webp)
+- Event로 Create Lead를 선택해주세요.
+![automation](/images/feature/lead/zapier/feature:zapier_5.webp)
+- 계정 연동시에 필요한 API key는 개인 설정 / 연동 / Zapier 연동에서 찾을 수 있습니다.
+
+## 3. Tally 변수와 세일즈맵 변수 연결하기 📍
+![automation](/images/feature/lead/zapier/feature:zapier_6.webp)
+- 위와 같이 Tally로 부터 제출된 값을 Create Lead Action에 활용할 수 있습니다.
+- 커스텀 데이터 필드 입력 방법은 아래 주의 사항을 확인해주세요.
+
+## 4. ❗️변수 연결시 주의 사항❗️
+![automation](/images/feature/lead/zapier/feature:zapier_7.webp)
+1. 리드 소스와 같이 세일즈맵의 단일 선택 데이터 유형의 경우, 미리 정의된 값들만 들어갈 수 있습니다.
+데이터 필드 관리에서 미리 정의하고 입력해주세요.
+2. 리드 이름, 가격, 소스  /  고객 이름, 이메일  /  회사 이름<br/>
+위의 데이터 외에 추가적인 데이터를 연동하는 경우 (커스텀 데이터 필드 포함) 아래의 형식을 지켜 Zapier에 입력해주세요.
+<Check>`{“name” : “데이터 필드 이름“, “stringValue” : “데이터 필드 값“}`</Check>
+아래는 예시 입니다. ❗️예시 그림 처럼 양쪽에 큰 따옴표(” “)를 꼭 넣어주세요!
+![automation](/images/feature/lead/zapier/feature:zapier_8.webp)
+- 데이터 필드 관리표에서 텍스트, 단일 선택이라면 “stringValue”를 사용하시면 되고,
+- 숫자면 numberValue, 날짜면 “dateValue”를 사용하시면 됩니다.
+![automation](/images/feature/lead/zapier/feature:zapier_9.webp)
