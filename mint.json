@@ -64,7 +64,7 @@
         },
         {
           "group": "자동화",
-          "pages": ["feature/automation/sequence", "feature/automation/workflow", "feature/automation/zapier"]
+          "pages": ["feature/automation/sequence", "feature/automation/workflow", "feature/automation/zapier-action","feature/automation/zapier-trigger"]
         },
         {
           "group": "대시보드",
